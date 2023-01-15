@@ -1,4 +1,4 @@
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
     .header {
         justify-content: space-around;
     }
@@ -7,6 +7,20 @@
             align-items: center;
         }
     }   
+    .consultation {
+        .title {
+            br {
+                display: none;
+            }
+            text-align: center;
+        }
+        &__descr {
+            text-align: center;
+        }
+        .feed-form {
+            margin: 36px auto 0 auto;
+        }
+    }
 }
 
 @media (max-width: 768px) {
@@ -38,6 +52,11 @@
             margin-top: 35px;
         }
     } 
+    .consultation {
+        .title {
+           font-size: 33px;
+        }
+    }
 }
 
 @media(max-width:424px) {
@@ -50,6 +69,16 @@
         &__icon {
             width: 320px;
             margin-top: 20px;
+        }
+    }
+    .consultation {
+        padding-top: 50px;
+        .title {
+           font-size: 25px;
+           line-height: 40px;
+        }
+        &__descr {
+            font-size: 17px;
         }
     }
 }
